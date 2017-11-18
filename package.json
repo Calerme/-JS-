@@ -1,0 +1,29 @@
+{
+  "name": "data-structure-on-js",
+  "version": "1.0.0",
+  "description": "学习数据结构与算法的笔记",
+  "main": "null",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Calerme/data-structure-on-JS.git"
+  },
+  "keywords": [
+    "\"data",
+    "structure\"",
+    "\"JavaScript\""
+  ],
+  "author": "Caler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Calerme/data-structure-on-JS/issues"
+  },
+  "homepage": "https://github.com/Calerme/data-structure-on-JS",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^4.11.0"
+  }
+}
