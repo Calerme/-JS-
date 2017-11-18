@@ -1,4 +1,6 @@
 module.exports = {
+    "root": true,
+    "parser": "babel-eslint",
     "env": {
         "browser": true,
         "commonjs": true,
@@ -7,6 +9,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
+        "ecmaVersion": 6,
         "sourceType": "module"
     },
     "rules": {
