@@ -1,14 +1,15 @@
 /***********************
- * 使用栈解决从十进制到二进制
+ * 使用栈解决从十进制到任意进制（最高十六进制）
  ***********************/
 
-function htob(n) {
+function htob(n, base = 2) {
     if (isNaN(n)) {
         throw new Error(`${n}不是一个有效数字`);
     }
 
     let stack = [];
     let nB = '';
+    let map = '0123456789abcdef';
 
     if (n<0) {
         nB = '-';
@@ -16,12 +17,12 @@ function htob(n) {
     }
 
     while(n>0) {
-        stack.push(n%2);
-        n = Math.floor(n / 2);
+        stack.push(n%base);
+        n = Math.floor(n / base);
     }
 
     while(stack.length) {
-        nB += stack.pop();
+        nB += map[stack.pop()];
     }
 
     return nB;
